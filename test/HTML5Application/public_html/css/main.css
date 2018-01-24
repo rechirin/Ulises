@@ -1,0 +1,220 @@
+/*  General CSS*/
+body{
+    background: #fff;
+}
+
+.wrapper{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+h1, h2, {
+    color: #626262;
+    font-family: arial;
+    letter-spacing: 1px;
+}
+
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h1, h2,         { font-weight: bolder }
+
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+
+.clearfix {  
+    *zoom: 1;  
+}
+
+
+
+
+
+
+
+/*    Billboard    */
+.billboard{
+    width: 100%;
+    height: 690px;
+    position: relative;
+}
+
+.billboard.light{
+    background: url('../img/misti.jpg') no-repeat;   
+
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.billboard .caption{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.billboard .caption.light{
+    color: grey;
+}
+
+.billboard .caption.dark{
+    color: #5d5d5d;
+}
+
+.billboard .caption h1{
+    font-family: "arial-bold";
+    font-size: 50px;
+    font-weight: bold; 
+    margin-bottom: 30px;
+}
+
+.billboard .caption.light h1{
+    color: #fff;
+}
+
+.billboard .caption.dark h1{
+    color: #5d5d5d;
+}
+
+.billboard .caption p{
+    font-family: "arial-regular";
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.billboard .caption.light p{
+    color: #fff;
+}
+
+.billboard .caption.dark p{
+    color: #5d5d5d;
+}
+
+.billboard .caption hr{
+    display: inline-block;
+    height: 1px;
+    width: 30px;
+    border: 0!important;   
+    margin: 0;
+    padding: 0;
+}
+
+.billboard .caption.light hr{
+    background: #fff;
+}
+
+.billboard .caption.dark hr{
+    background: #5d5d5d;
+}
+
+
+
+
+
+
+/*    header    */
+header{
+    width: 100%;
+    height: 125px;
+}
+
+header .logo{
+    float: left;
+    margin-top: 50px;
+}
+
+header nav{
+    float: right;
+    margin-top: 57px;
+}
+
+
+header nav ul li{
+    list-style: none;
+    display: block;
+    float: left;
+    margin-left: 50px;
+}
+
+header nav ul li a{
+    text-decoration: none;  
+    font-family: "arial-regular";
+    font-size: 14px;
+    text-align: left;
+
+    transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -o-transition:all .2s linear;
+}
+
+header.light nav ul li a{  
+    color: #fff;
+}
+
+header.light nav ul li a:hover{
+    color: #B9B9B9;
+}
+
+header.dark nav ul li a{  
+    color: #5d5d5d;
+}
+
+header.dark nav ul li a:hover{
+    color: #919191;
+}
+
+
+/*    footer    */
+footer{
+    padding: 35px 0;
+    overflow: hidden;
+}
+
+footer .footer_logo{
+    float: right;
+    background-color: black;
+}
+
+footer .rights p{
+    float: left;
+    color: blue;
+    font-family: "arial-regular";
+    font-size: 13px;
+    margin: 5px 0 0 5px;
+    text-align: left;
+}
+
+footer nav ul{
+    float: right;
+    overflow: hidden;
+    list-style: none;
+    margin-top: 5px; 
+}
+
+footer nav ul li{
+    float: left;
+    margin-left: 5px;
+}
+
+footer nav ul li a{
+    color: #838181;
+    font-family: "arial-regular";
+    font-size: 13px;
+    text-decoration: none;
+
+    transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -o-transition:all .2s linear;
+}
+
+footer nav ul li a:hover{
+    color: #616161;
+}
